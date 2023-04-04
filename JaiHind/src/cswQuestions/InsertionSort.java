@@ -1,0 +1,22 @@
+package cswQuestions;
+import java.util.Scanner;
+public class InsertionSort {
+
+	public static void main(String[] args) {
+		int arr[] = {5,6,8,1,9,4,2,3,0};
+		int j,i,val;
+		for(i = 0; i < arr.length-1; i++ ) 
+		{
+			val = arr[i+1];
+			j = i;
+			while(j>=0 && arr[j]>val) 
+			{
+				arr[j+1] = arr[j];
+				j--;
+			}
+			arr[j+1]= val;
+		}
+		System.out.println("Finished");
+	}
+
+}
